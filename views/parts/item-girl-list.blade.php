@@ -1,6 +1,6 @@
 <div class="ad-item-wrap mb8">
     @foreach(wncms()->link()->getList(['tags' => isset($tag) ? [$tag] : null]) as $link)
-    <a class="by-item" wncms-link-click data-link-id="{{ $link->id }}" href="{{ $link->url }}" target="_blank">
+    <a class="by-item" wncms-link-click data-click-id="{{ $link->id }}" data-click-type="{{ wncms()->getModelClass('link') }}" href="{{ $link->url }}" target="_blank">
         <div class="item-s4">
             <div class="header mb8">
                 <div class="cover">

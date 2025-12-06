@@ -29,7 +29,7 @@
                     @foreach(wncms()->link()->getList([
                         'tags' => [$childTag]
                     ]) as $link)
-                    <a class="zone-item ad3-item" wncms-link-click data-link-id="{{ $link->id }}" href="{{ $link->url }}" target="_blank">
+                    <a class="zone-item ad3-item" wncms-link-click data-click-id="{{ $link->id }}" data-click-type="{{ wncms()->getModelClass('link') }}" href="{{ $link->url }}" target="_blank">
                         <img class="ad3-item-img" src="{{ $link->image }}" alt="">
                         <div class="ad3-item-a">
                             <div class="like-wrap">
@@ -72,7 +72,7 @@
                     @foreach(wncms()->link()->getList([
                         'tags' => [$childTag]
                     ]) as $link)
-                    <a class="flow-item" wncms-link-click data-link-id="{{ $link->id }}" href="{{ $link->url }}" target="_blank">
+                    <a class="flow-item" wncms-link-click data-click-id="{{ $link->id }}" data-click-type="{{ wncms()->getModelClass('link') }}" href="{{ $link->url }}" target="_blank">
                         <div class="flow-img-wrap">
                             <img class="flow-img" src="{{ $link->image }}" alt="">
                             <div class="flow-ab">
@@ -116,7 +116,7 @@
                     @foreach(wncms()->link()->getList([
                         'tags' => [$tag]
                     ]) as $link)
-                    <a class="zone-item ad3-item" wncms-link-click data-link-id="{{ $link->id }}" href="{{ $link->url }}" target="_blank">
+                    <a class="zone-item ad3-item" wncms-link-click data-click-id="{{ $link->id }}" data-click-type="{{ wncms()->getModelClass('link') }}" href="{{ $link->url }}" target="_blank">
                         <img class="ad3-item-img" src="{{ $link->image }}" alt="">
                         <div class="ad3-item-a">
                             <div class="like-wrap">

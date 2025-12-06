@@ -6,7 +6,7 @@
                     'tags' => isset($tag) ? [$tag] : null
                 ]) as $link)
                 <div class="swiper-slide">
-                    <a wncms-link-click data-link-id="{{ $link->id }}" href="{{ $link->url }}" target="_blank" class="qq-item">
+                    <a wncms-link-click data-click-id="{{ $link->id }}" data-click-type="{{ wncms()->getModelClass('link') }}" href="{{ $link->url }}" target="_blank" class="qq-item">
                         <div class="qq-img-wrap">
                             <img class="qq-img" src="{{ $link->image }}" alt="">
                         </div>
